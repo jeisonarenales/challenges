@@ -1,8 +1,10 @@
-name: Python test
+name: Python pipeline
 on: 
   pull_request:
     branches:
       - main
+    paths:
+      - '**.py'
 jobs:
   python-unit-tests:
     runs-on: ubuntu-latest
