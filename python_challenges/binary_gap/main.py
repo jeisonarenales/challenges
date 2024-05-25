@@ -3,6 +3,15 @@ Binary Gap Challenge
 """
 
 
+def to_bin(n) -> str:
+    """
+    Method to get the binary representation from a positive number
+    :param n: positive integer
+    :return: binary representation of the number
+    """
+    return bin(n).replace("0b", "")
+
+
 def solution(n) -> int:
     """
     Solution method for Binary Gap challenge
@@ -23,12 +32,3 @@ def solution(n) -> int:
             count += 1
 
     return zero_max
-
-
-def to_bin(n) -> str:
-    """
-    Method to get the binary representation from a positive number
-    :param n: positive integer
-    :return: binary representation of the number
-    """
-    return bin(n).replace("0b", "")
